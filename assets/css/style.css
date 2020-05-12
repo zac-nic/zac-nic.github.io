@@ -1,0 +1,16 @@
+/* line 1, ../compass/sass/style.scss */
+html {
+  background-color: red;
+}
+
+/* line 4, ../compass/sass/style.scss */
+.liste {
+  padding: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: slateblue;
+}
+/* line 8, ../compass/sass/style.scss */
+.liste--item {
+  background-color: royalblue;
+  padding: 10px;
+}

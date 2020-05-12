@@ -1,0 +1,12 @@
+html {
+    background-color: red;
+}
+.liste{
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: slateblue;
+    &--item{
+        background-color: royalblue;
+        padding: 10px;
+    }
+}
