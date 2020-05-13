@@ -1,0 +1,90 @@
+// Import
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Oswald&display=swap');
+// Variables
+$desktop : 600px;
+$bleu : #34495E;
+$gris : #5C5C5C;
+
+// Styles
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.backgroundBlanc {
+    background-color: white;
+    padding: 0 20px 60px 20px;
+    margin-top: -10px;
+    margin-bottom: 6px;
+    box-shadow: black 0 6px 6px;
+
+}
+
+.cv{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100px;
+    &__telecharger {
+        text-align: center;
+        color: $bleu;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.gradient {
+    margin: 0;
+    background: rgb(52,73,94);
+    background: linear-gradient(90deg, rgba(52,73,94,1) 0%, rgba(255,255,255,1) 50%, rgba(52,73,94,1) 100%);
+}
+
+.icone{
+    width: 100px;
+
+}
+
+.img{
+    &__background{
+        width: 100%;
+        z-index: -10;
+    }   
+}
+
+.ligneHorizontale {
+border-bottom: solid $bleu 2px;
+width:75%;
+margin: 10% auto;
+}
+
+.liste{
+    list-style-type: none;
+    &--item{
+padding: 10px 0;
+    }
+}
+
+.textePresentation {
+width: 100%;
+margin: 10% auto;
+}
+
+.webJoli {
+text-align: center;
+margin: 10% 0;
+}
