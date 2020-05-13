@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Oswald&display=swap");
+/* line 10, /Users/zachary/Sites/zac-nic.github.io/assets/compass/sass/style.scss */
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 5vw; }
+
+/* line 15, /Users/zachary/Sites/zac-nic.github.io/assets/compass/sass/style.scss */
+.bouton {
+  background-color: #34495E;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  padding: 10px 10%;
+  margin: 20px auto 0 auto;
+  font-weight: 500;
+  letter-spacing: 2px;
+  box-shadow: 2px 2px 2px steelblue; }
+  /* line 26, /Users/zachary/Sites/zac-nic.github.io/assets/compass/sass/style.scss */
+  .bouton__linkedIn {
+    text-decoration: none;
+    color: white;
+    background-color: #34495E;
+    font-size: 0.7em;
+    letter-spacing: 2px;
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 10px 5%;
+    margin: 0 auto;
+    box-shadow: 2px 2px 2px steelblue; }
+
+/* line 40, /Users/zachary/Sites/zac-nic.github.io/assets/compass/sass/style.scss */
+.backgroundBlanc {
+  background-color: white;
+  padding: 0 20px 60px 20px;
+  margin-top: -10px;
+  margin-bottom: 6px;
+  box-shadow: black 0 6px 6px; }
+
+/* line 49, /Users/zachary/Sites/zac-nic.github.io/assets/compass/sass/style.scss */
+.center {
+  text-align: center;
+  margin: 20px auto; }
+
+/* line 54, /Users/zachary/Sites/zac-nic.github.io/assets/compass/sass/style.scss */
+.cv {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 50vw;
+  align-items: center;
+  text-decoration: none; }
+  /* line 61, /Users/zachary/Sites/zac-nic.github.io/assets/compass/sass/style.scss */
+  .cv__telecharger {
+    text-align: center;
+    color: #34495E; }
+
+/* line 67, /Users/zachary/Sites/zac-nic.github.io/assets/compass/sass/style.scss */
+.flex {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  justify-content: center;
+  margin: 0 auto; }
+
+/* line 75, /Users/zachary/Sites/zac-nic.github.io/assets/compass/sass/style.scss */
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%; }
+
+/* line 81, /Users/zachary/Sites/zac-nic.github.io/assets/compass/sass/style.scss */
+.gradient {
+  margin: 0;
+  background: #34495e;
+  background: linear-gradient(90deg, #34495e 0%, white 50%, #34495e 100%); }
+
+/* line 87, /Users/zachary/Sites/zac-nic.github.io/assets/compass/sass/style.scss */
+h1 {
+  font-size: 12vw;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  margin-top: 0; }
+
+/* line 94, /Users/zachary/Sites/zac-nic.github.io/assets/compass/sass/style.scss */
+h2 {
+  font-size: 8vw;
+  color: #34495E;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  margin: 0; }
+
+/* line 102, /Users/zachary/Sites/zac-nic.github.io/assets/compass/sass/style.scss */
+.icone {
+  width: 25vw; }
+  /* line 105, /Users/zachary/Sites/zac-nic.github.io/assets/compass/sass/style.scss */
+  .icone__form {
+    width: 14%;
+    height: 14%;
+    margin-right: 5%; }
+  /* line 111, /Users/zachary/Sites/zac-nic.github.io/assets/compass/sass/style.scss */
+  .icone__h2 {
+    width: 3em;
+    height: 3em;
+    margin-right: 10px; }
+
+/* line 119, /Users/zachary/Sites/zac-nic.github.io/assets/compass/sass/style.scss */
+.img__background {
+  width: 100%; }
+
+/* line 124, /Users/zachary/Sites/zac-nic.github.io/assets/compass/sass/style.scss */
+.input {
+  border-radius: 5px;
+  border: 2px solid darkgrey;
+  padding: 1em;
+  margin: 0;
+  width: 70%; }
+  /* line 130, /Users/zachary/Sites/zac-nic.github.io/assets/compass/sass/style.scss */
+  .input__flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%; }
+  /* line 136, /Users/zachary/Sites/zac-nic.github.io/assets/compass/sass/style.scss */
+  .input__message {
+    height: 100px; }
+
+/* line 141, /Users/zachary/Sites/zac-nic.github.io/assets/compass/sass/style.scss */
+.ligneHorizontale {
+  border-bottom: solid #34495E 0.2em;
+  width: 75%;
+  margin: 10% auto; }
+
+/* line 147, /Users/zachary/Sites/zac-nic.github.io/assets/compass/sass/style.scss */
+.liste {
+  list-style-type: none;
+  padding: 5% 0 0 0;
+  margin: 0; }
+  /* line 151, /Users/zachary/Sites/zac-nic.github.io/assets/compass/sass/style.scss */
+  .liste--item {
+    margin: 2% 0; }
+    /* line 153, /Users/zachary/Sites/zac-nic.github.io/assets/compass/sass/style.scss */
+    .liste--item img {
+      width: 100%;
+      height: 100%; }
+
+/* line 160, /Users/zachary/Sites/zac-nic.github.io/assets/compass/sass/style.scss */
+.ou {
+  font-family: Oswald;
+  font-weight: 600;
+  letter-spacing: 1px; }
+
+/* line 166, /Users/zachary/Sites/zac-nic.github.io/assets/compass/sass/style.scss */
+.textePresentation {
+  width: 100%;
+  margin: 10% auto; }
+
+/* line 171, /Users/zachary/Sites/zac-nic.github.io/assets/compass/sass/style.scss */
+.webJoli {
+  text-align: center;
+  margin: 10% 0; }
+
+/*# sourceMappingURL=style.css.map */

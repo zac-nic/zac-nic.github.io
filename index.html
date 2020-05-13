@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Zachary Nicol-P. | Portfolio</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/compass/sass/style.css">
         <meta charset="UTF-8">
         <meta name="description" content="Portfolio professionnel de Zachary - Réalisé dans le cadre du cours de Stage en entreprise - Techniques d'Intégration Multimédia">
         <meta name="author" content="Zachary Nicol-P.">
@@ -18,7 +18,10 @@
 <h2>Développeur Front-End / UI</h2>
 <p class="webJoli">Rends le web plus joli, <br/>une ligne de code à la fois</p>
 <div class="ligneHorizontale"></div>
-<h2>Petite tranche de vie #21</h2>
+<div class="flex">
+<img class="icone__h2" src="assets/images/icones/icons8-information-100.png" alt="icone">
+<h2>Petite tranche de vie</h2>
+</div>
 <p class="textePresentation">
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis eget velit aliquet sagittis id consectetur purus ut. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Nibh cras pulvinar mattis nunc sed blandit. Hendrerit dolor magna eget est lorem. Placerat duis ultricies lacus sed turpis tincidunt. At varius vel pharetra vel turpis nunc eget lorem. 
 </p>
@@ -28,40 +31,45 @@
     <span class="cv__telecharger">Télécharger mon CV en format PDF</span>
   </a>
   <div class="ligneHorizontale"></div>
-  <h2>Quelques réalisations</h2>
+<div class="flex">
+    <img class="icone__h2" src="assets/images/icones/icons8-code-100.png" alt="icone">
+    <h2>Quelques réalisations</h2>  
+</div>
 <ul class="liste">
-    <li class="liste--item"><a href="projets/bataille.html">La Bataille de la Ferme Schrute</a></li>
-    <li class="liste--item"><a href="projets/coeuratout.html">Coeur Atout</a></li>
-    <li class="liste--item"><a href="projets/dreamtim.html">Agence Web 1Deux3</a></li>
-    <li class="liste--item"><a href="projets/elvis.html">Elvis "Le Quiz du Rock N' Roll" Presley</a></li>
-    <li class="liste--item"><a href="projets/patate.html">N'oublie pas la patate!</a></li>
-    <li class="liste--item"><a href="projets/timcsf.html">Site web de la TIM</a></li>
-    <li class="liste--item"><a href="projets/traces.html">Traces - Librairie en ligne</a></li>
+    <li class="liste--item"><a href="projets/bataille.html"><img src="assets/images/bataille/bataille_vignette.jpg" alt="La Bataille de la Ferme Schrute"></a></li>
+    <li class="liste--item"><a href="projets/coeuratout.html"><img src="assets/images/coeuratout/coeuratout_vignette.jpg" alt="Coeur Atout"></a></li>
+    <li class="liste--item"><a href="projets/dreamtim.html"><img src="assets/images/dreamtim/dreamtim_vignette.jpg" alt="Agence Web 1Deux3"></a></li>
+    <li class="liste--item"><a href="projets/elvis.html"><img src="assets/images/elvis/elvis_vignette.jpg" alt="Elvis Le Quiz du Rock N' Roll Presley"></a></li>
+    <li class="liste--item"><a href="projets/patate.html"><img src="assets/images/patate/patate_vignette.jpg" alt="N'oublie pas la patate!"></a></li>
+    <li class="liste--item"><a href="projets/timcsf.html"><img src="assets/images/timcsf/timcsf_vignette.jpg" alt="Site web de la TIM"></a></li>
+    <li class="liste--item"><a href="projets/traces.html"><img src="assets/images/traces/traces_vignette.jpg" alt="Traces - Librairie en ligne"></a></li>
 </ul>
 <div class="ligneHorizontale"></div>
-<h2>Écrivez-moi!</h2>
-<div class="center">
+<div class="flex">
+    <img class="icone__h2" src="assets/images/icones/icons8-contact-d'affaires-100.png" alt="icone">
+    <h2>Écrivez-moi!</h2> 
+</div>
   <form
   action="https://formspree.io/xdowkpdp"
   method="POST">
-  <label>
-    Votre nom :
-    <input type="text" name="Nom">
-  </label>
-  <label>
-    Votre courriel :
-    <input type="text" name="Courriel">
-  </label>
-  <label>
-    Votre message :
-    <textarea name="Message"></textarea>
-  </label>
-  <button type="submit">Envoyer</button>
+  <div class="input__flex">
+    <img class="icone__form" src="assets/images/icones/icons8-webcam-man-100.png" alt="nom">
+    <input class="input" type="text" name="Nom" placeholder="Votre nom">
+  </div>
+  <div class="input__flex">
+    <img class="icone__form" src="assets/images/icones/icons8-email-100.png" alt="courriel">
+    <input class="input" type="text" name="Courriel" placeholder="Votre courriel">
+  </div>
+  <div class="input__flex">
+    <img class="icone__form" src="assets/images/icones/icons8-crayon-100.png" alt="message">
+    <textarea class="input input__message" name="Message" placeholder="Votre message"></textarea>
+  </div>
+  <button class="bouton" type="submit">ENVOYER ►</button>
 </form>
-<p>OU</p>
-<a href="https://www.linkedin.com/in/zachary-nicol-p/">Contactez-moi sur Linked-In</a></div>
+<p class="center ou">OU</p>
+        <div class="center"><a class="bouton__linkedIn" href="https://www.linkedin.com/in/zachary-nicol-p/">CONTACTEZ-MOI SUR LINKED-IN ►</a></div>
 
-</div>
+    </div>
 <img class="img__background" src="assets/images/footer.png" alt="Arrière-plan pied de page">
 </body>
 </html>

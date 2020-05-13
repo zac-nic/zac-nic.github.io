@@ -1,5 +1,6 @@
 // Import
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Oswald&display=swap');
+
 // Variables
 $desktop : 600px;
 $bleu : #34495E;
@@ -8,19 +9,32 @@ $gris : #5C5C5C;
 // Styles
 body {
     font-family: 'Nunito', sans-serif;
+    font-size: 5vw;
 }
 
-h1 {
-    font-size: 3em;
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-    margin-top: 0;
-}
-
-h2 {
-    font-size: 1.5em;
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
+.bouton {
+    background-color: $bleu;
+    border: none;
+    border-radius:2px;
+    color: white;
+    padding: 10px 10%;
+    margin: 20px auto 0 auto;
+    font-weight: 500;
+    letter-spacing: 2px;
+    box-shadow: 2px 2px 2px steelblue;
+    
+    &__linkedIn {
+        text-decoration: none;
+        color: white;
+        background-color: $bleu;
+        font-size: 0.7em;
+        letter-spacing: 2px;
+        font-weight: 600;
+        border-radius: 3px;
+        padding: 10px 5%;
+        margin: 0 auto;
+        box-shadow: 2px 2px 2px steelblue;
+    }
 }
 
 .backgroundBlanc {
@@ -32,20 +46,36 @@ h2 {
 
 }
 
+.center {
+    text-align: center;
+    margin: 20px auto;
+}
+
 .cv{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 100px;
+    width: 50vw;
+    align-items: center;
+    text-decoration: none;
     &__telecharger {
         text-align: center;
         color: $bleu;
     }
 }
 
+.flex {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
 form {
     display: flex;
     flex-direction: column;
+    margin-top: 5%;
 }
 
 .gradient {
@@ -54,37 +84,91 @@ form {
     background: linear-gradient(90deg, rgba(52,73,94,1) 0%, rgba(255,255,255,1) 50%, rgba(52,73,94,1) 100%);
 }
 
-.icone{
-    width: 100px;
-
+h1 {
+    font-size: 12vw;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 0;
 }
 
-.img{
-    &__background{
-        width: 100%;
-        z-index: -10;
-    }   
+h2 {
+    font-size: 8vw;
+    color: $bleu;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    margin:0;
 }
 
-.ligneHorizontale {
-border-bottom: solid $bleu 2px;
-width:75%;
-margin: 10% auto;
-}
-
-.liste{
-    list-style-type: none;
-    &--item{
-padding: 10px 0;
+.icone {
+    width: 25vw;
+    
+    &__form {
+        width: 14%;
+        height: 14%;
+        margin-right: 5%;
+    }
+    
+    &__h2 {
+        width: 3em;
+        height: 3em;
+        margin-right: 10px;
     }
 }
 
+.img {
+    &__background {
+        width: 100%;
+    }   
+}
+
+.input {
+    border-radius: 5px;
+    border: 2px solid darkgrey;
+    padding: 1em;
+    margin: 0;
+    width:70%;
+    &__flex {
+        display:flex;
+        flex-wrap: wrap;
+        margin-top: 5%;
+    }
+
+    &__message {
+height: 100px;
+    }
+}
+
+.ligneHorizontale {
+    border-bottom: solid $bleu 0.2em;
+    width:75%;
+    margin: 10% auto;
+}
+
+.liste {
+    list-style-type: none;
+    padding: 5% 0 0 0;
+    margin:0;
+    &--item{
+        margin: 2% 0;
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.ou {
+    font-family: Oswald;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
 .textePresentation {
-width: 100%;
-margin: 10% auto;
+    width: 100%;
+    margin: 10% auto;
 }
 
 .webJoli {
-text-align: center;
-margin: 10% 0;
+    text-align: center;
+    margin: 10% 0;
 }
