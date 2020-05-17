@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>La Bataille de la Ferme Schrute | Zachary Nicol-P. | Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="../assets/compass/sass/style.css">
+        <meta charset="UTF-8">
+        <meta name="description" content="Fiche de projet - La Bataille de la Ferme Schrute">
+        <meta name="author" content="Zachary Nicol-P.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" 
+      type="image/png" 
+      href="assets/images/icones/icons8-code-100.png">
+    </head>
+<body class="gradient">
+<img class="img__background" src="../assets/images/header.png" alt="Arrière-plan entête">
+<div class="backgroundBlanc">
+    <a href="../index.html" class="retour">◄ Retour à l’accueil</a>
+<h1 class="h1__projet">La Bataille de la Ferme Schrute</h1>
+<h2>TypeScript | ReactJS | Adobe Animate</h2>
+<div class="ligneHorizontale"></div>
+<h3>Galerie</h3>
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="../assets/images/bataille/bataille_1.png" style="width:100%">
+    <div class="text">Niveau 1</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="../assets/images/bataille/bataille_2.png" style="width:100%">
+    <div class="text">Niveau 2</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="../assets/images/bataille/bataille_3.png" style="width:100%">
+    <div class="text">Vies manquantes</div>
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+    <p class="descriptionProjet">La Bataille de la Ferme Schrute est un jeu-vidéo ayant pour but d'abattre les ours envahisseurs à l'aide de betteraves tout en évitant les pièges. Le joueurs dispose de 3 vies avant d'être éliminé et il doit toucher 10 ours afin de passer au niveau suivant.</p>
+    <div class="ligneHorizontale"></div>
+    <p class="descriptionProjet">Les animations ont étés réalisés à l'aide d'Adobe Animate et l'ensemble des dessins (tous en SVG) ont étés tracés par moi-même dans Adobe Illustrator. Tout ces éléments ont étés programmés avec TypeScript (ReactJS) et c'est ainsi que le jeu à pris forme. Il y a un compteur de 5 secondes entre chaque niveau et le jeu recommence automatiquement lorsqu'il est réussi à 100%.</p>
+</div>
+<img class="img__background" src="../assets/images/footer.png" alt="Arrière-plan pied de page">
+        <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}</script>
+</body>
+</html>
